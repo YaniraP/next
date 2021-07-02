@@ -1,12 +1,21 @@
-import Link from 'next/link'
+import styles from '../styles/Guest.module.css';
+import Link from 'next/link';
 
-//TODO: add link + style
 export default function Guest({ guest }) {
   return (
-    <li>
-        <a>{guest.name}</a>
-        <p>{guest.rsvp}</p>
-    
-    </li>
-  )
+    <div className={styles.guestItem}>
+      <Link href='/'>
+        <a className={styles.guestName}>{guest.name}</a>
+      </Link>
+      <div className={styles.guestIcon}>
+        {guest.rsvp === 'confirmed' ? (
+          <i className="fa fa-check-square confirmed" ></i>
+        ) : (
+          <i className="fa fa-question-circle" ></i>
+        )}
+      </div>
+    </div>
+  );
 }
+
+

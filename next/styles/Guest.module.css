@@ -1,0 +1,30 @@
+.guestItem {
+display: flex;
+justify-content: space-around;
+border: 1px solid #d8d5d5;
+padding: 10px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+box-shadow: #6f6f6f;
+
+}
+
+.guestName {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.guestIcon{
+  margin-top: 20px;
+}
+
+.confirmed {
+  color: chartreuse !important;
+}
+
+.fa {
+  size: 50px;
+  color: chartreuse;
+}

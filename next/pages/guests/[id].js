@@ -13,6 +13,7 @@ const fetcher = async (url) => {
 
 export default function GuestPage() {
   const router = useRouter();
+  console.log('router -> ' , router);
   const { id } = router.query;
 
   const { data, error } = useSWR(
