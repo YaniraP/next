@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
+//TODO: fix card's style
 export default function HomePage() {
   return (
     <div className={styles.container}>
@@ -15,29 +17,36 @@ export default function HomePage() {
         <h1 className={styles.title}>Guest List</h1>
 
         <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
-            <h2>First Task &rarr;</h2>
-            {/* <p></p> */}
-          </a>
+          <Link href='/task1' className={styles.card}>
+            <a>
+              <h2>First Task &rarr;</h2>
+            </a>
+          </Link>
 
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h2>Second Task &rarr;</h2>
-            {/* <p></p> */}
-          </a>
+          <Link
+            href='https://nextjs.org/learn'
+            className={styles.card}
+            className='link'>
+            <a>
+              <h2>Second Task &rarr;</h2>
+            </a>
+          </Link>
 
-          <a
+          <Link
             href='https://github.com/vercel/next.js/tree/master/examples'
             className={styles.card}>
-            <h2>Third Task &rarr;</h2>
-            {/* <p></p> */}
-          </a>
+            <a>
+              <h2>Third Task &rarr;</h2>
+            </a>
+          </Link>
 
-          <a
+          <Link
             href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
             className={styles.card}>
-            <h2>Fourth Task &rarr;</h2>
-            {/* <p></p> */}
-          </a>
+            <a>
+              <h2>Fourth Task &rarr;</h2>
+            </a>
+          </Link>
         </div>
       </main>
 
@@ -48,7 +57,12 @@ export default function HomePage() {
           rel='noopener noreferrer'>
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src='/the_Knot_Logo_full.png' alt='The Knot Logo' width={80} height={20} />
+            <Image
+              src='/the_Knot_Logo_full.png'
+              alt='The Knot Logo'
+              width={80}
+              height={20}
+            />
           </span>
         </a>
       </footer>
