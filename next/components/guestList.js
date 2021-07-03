@@ -45,12 +45,6 @@ export default function GuestList({data}) {
         </div>
       </div>
     </div>
-
-
-
-
-
-
   );
 }
 
