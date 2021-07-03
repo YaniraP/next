@@ -1,28 +1,22 @@
-import { useRouter } from "next/router";
-import useSWR from 'swr'
+import { useRouter } from 'next/router';
+import useSWR from 'swr';
+import { fetcher } from '../index';
 
-const fetcher = async (url) => {
-  const res = await fetch(url)
-  const data = await res.json()
-
-  if (res.status !== 200) {
-    throw new Error(data.message)
-  }
-  return data
-}
 
 export default function GuestPage() {
   const router = useRouter();
-  console.log('router -> ' , router);
   const { id } = router.query;
 
-  const { data, error } = useSWR(
-    () => id && `/api/guests/${id}`,
-    fetcher
-  )
+  const { data, error } = useSWR(`/api/guests/${id}`, fetcher);
 
-  if (error) return <div>{error.message}</div>
-  if (!data) return <div>Loading...</div>
+  if (error) return 'An error has occurred: ' + error;
+  if (!data) return 'Loading...';
 
-  return <div>Guest {id}</div>;
+  return (
+    <>
+      <div>Guest {id}</div>
+      <p>{data.name}</p>
+
+     </>
+  );
 }
