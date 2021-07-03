@@ -8,14 +8,6 @@ export default function Navbar() {
       <Link href='/'>
         <a>Guest List</a>
       </Link>
-      <div className={styles.searchContainer}>
-        <form action='/action_page.php'>
-          <input type='search' placeholder='Search a guest' name='search'></input>
-          <button type='submit'>
-            <i className='fa fa-search'></i>
-          </button>
-        </form>
-      </div>
     </div>
   );
 }

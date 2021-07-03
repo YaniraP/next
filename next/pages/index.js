@@ -4,7 +4,7 @@ import useSWR from 'swr';
 
 import Navbar from '../components/navbar';
 import GuestList from '../components/guestList';
-import { useState } from 'react';
+
 
 export const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -33,6 +33,7 @@ export default function HomePage() {
         <Navbar />
         <GuestList data={data} />
       </main>
+
     </div>
 
   );
