@@ -6,6 +6,7 @@ padding: 10px 20px;
 margin-bottom: 10px;
 border-radius: 5px;
 box-shadow: #6f6f6f;
+margin-top: 10px;
 
 }
 
@@ -21,7 +22,7 @@ box-shadow: #6f6f6f;
 }
 
 .confirmed {
-  color: chartreuse !important;
+  color: chartreuse;
 }
 
 .fa {

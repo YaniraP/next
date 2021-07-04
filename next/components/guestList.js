@@ -31,10 +31,9 @@ export default function GuestList({data}) {
             type="search"
             value={name}
             onChange={filter}
-            className="input"
             placeholder="Search a guest 🔍"
         />
-        <div className="user-list">
+        <div className="styles.guest-list">
           {foundGuests && foundGuests.length > 0 ? (
             foundGuests.map((guest) => (
               <GuestListItem key={guest.id} guest={guest} />

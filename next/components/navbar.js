@@ -8,11 +8,13 @@ export default function Navbar() {
   return (
     <div className={styles.topnav}>
       <Link href='/'>
-        <a><Image 
-        src={logo} 
-        alt='Logo'
-        width={90}
-        height={30}/></a>
+        <a>
+          <Image 
+            src={logo} 
+            alt='Logo'
+            width={90}
+            height={30}/>
+        </a>
       </Link>
     </div>
   );

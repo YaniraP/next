@@ -1,0 +1,38 @@
+.GuestPageCointaner{
+  margin-left: 10px;
+  width: 500px;
+  margin: auto;
+}
+
+.guestInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 95%;
+
+}
+
+.guestInfoItem{
+  border: 1px solid rgb(201, 195, 195);
+  margin-top: 10px;
+}
+
+.guestInfoItem li{
+  text-decoration: none;
+}
+
+.dish {
+  text-transform: capitalize;
+}
+
+.btn {
+  margin-left: 40px;
+  padding: 3px 15px;
+  font-size: 15px;
+  background-color: rgb(238, 230, 230); 
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-color: rgb(139, 119, 119); 
+}

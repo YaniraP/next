@@ -1,4 +1,4 @@
-import styles from '../styles/Guest.module.css';
+import styles from '../styles/GuestListItem.module.css';
 import Link from 'next/link';
 
 export default function GuestListItem({ guest }) {

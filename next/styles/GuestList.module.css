@@ -5,5 +5,19 @@
 
 .container {
   padding: 0 20px;
+  width: 500px;
+  margin: auto;
+  justify-content: center;
 }
 
+.guest-list {
+
+  margin-top: 20px;
+}
+.container input {
+  padding: 5px 15px;
+  width: 98%;
+  margin-bottom: 20px;
+  margin-left: 1%;
+
+}
