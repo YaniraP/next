@@ -1,5 +1,8 @@
 import styles from '../styles/GuestListItem.module.css';
 import Link from 'next/link';
+import confirm from '../public/confirm.svg';
+import pending from '../public/pending.svg';
+import Image from 'next/image';
 
 export default function GuestListItem({ guest }) {
   return (
@@ -9,13 +12,23 @@ export default function GuestListItem({ guest }) {
       </Link>
       <div className={styles.guestIcon}>
         {guest.rsvp === 'confirmed' ? (
-          <i className="fa fa-check-square confirmed" ></i>
+          <Image
+            src={confirm}
+            alt='Confirmed'
+            width={90}
+            height={30}
+            className={styles.icon}
+          />
         ) : (
-          <i className="fa fa-question-circle" ></i>
+          <Image
+            src={pending}
+            alt='Confirmed'
+            width={90}
+            height={30}
+            className={styles.icon}
+          />
         )}
       </div>
     </div>
   );
 }
-
-

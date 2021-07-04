@@ -4,6 +4,25 @@
   margin: auto;
 }
 
+.title {
+  text-align: center;
+}
+
+.question {
+  text-align: center;
+
+}
+
+.btn {
+  /* margin-left: 40px; */
+  padding: 3px 15px;
+  font-size: 15px;
+  background-color: rgb(238, 230, 230); 
+  border-radius: 5px;
+  justify-self: center;
+  
+}
+
 .guestInfo {
   display: flex;
   flex-direction: column;
@@ -14,7 +33,7 @@
 
 .guestInfoItem{
   border: 1px solid rgb(201, 195, 195);
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .guestInfoItem li{
@@ -25,14 +44,13 @@
   text-transform: capitalize;
 }
 
-.btn {
-  margin-left: 40px;
-  padding: 3px 15px;
-  font-size: 15px;
-  background-color: rgb(238, 230, 230); 
-  border-radius: 5px;
-}
-
 .btn:hover{
   background-color: rgb(139, 119, 119); 
 }
+
+@media screen and (max-width: 600px) {
+  .GuestPageCointaner{
+    width: 100%;
+    margin: 0;
+  }
+  }

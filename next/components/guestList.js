@@ -39,7 +39,7 @@ export default function GuestList({data}) {
               <GuestListItem key={guest.id} guest={guest} />
                ))
                 ) : (
-                <h1>Ups! It looks like you haven't invited this person yet.</h1>
+                <h1 className={styles.message}>Ups! It looks like you haven't invited this person yet</h1>
           )}
         </div>
       </div>

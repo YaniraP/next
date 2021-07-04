@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/HomePage.module.css';
 import useSWR from 'swr';
 
 import Navbar from '../components/navbar';
@@ -27,7 +27,6 @@ export default function HomePage() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar />
         <GuestList data={data} />
       </main>
 

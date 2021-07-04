@@ -1,10 +1,16 @@
 
 .main {
-  /* padding: 5rem 0; */
-  /* flex: 1; */
-
+    margin-left: 10px;
+    width: 500px;
+    margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .main{
+    width: 100%;
+    margin: 0;
+  }
+  }
 
 /* .container {
   min-height: 100vh;
