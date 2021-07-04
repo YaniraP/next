@@ -6,7 +6,6 @@ import GuestInfo from '../../components/guestInfo';
 import GuestForm from '../../components/guestForm';
 import styles from '../../styles/GuestPage.module.css';
 
-//TODO-> MENU SELETION: MESSAGE NO MENU SELECTED
 export default function GuestPage() {
   const router = useRouter();
   const { id } = router.query;

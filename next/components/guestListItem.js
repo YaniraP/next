@@ -1,8 +1,8 @@
-import styles from '../styles/GuestListItem.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import styles from '../styles/GuestListItem.module.css';
 import confirm from '../public/confirm.svg';
 import pending from '../public/pending.svg';
-import Image from 'next/image';
 
 export default function GuestListItem({ guest }) {
   return (

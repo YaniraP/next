@@ -1,91 +1,16 @@
-.GuestPageCointaner{
+.GuestPageCointaner {
   margin-left: 10px;
   width: 500px;
   margin: auto;
 }
 
-.infoContainer{
-
-  margin-top: 5%;
-  border: 1px solid #d8d5d5;
-  padding: 2% 4%;
-border-radius: 5px;
-box-shadow: #6f6f6f;
-  }
-
-.title {
-  text-align: center;
-}
-
 .question {
   text-align: center;
-
-}
-
-.btn {
-  margin: 5% 30%;
-  width: 40%;
-  padding: 7px 15px;
-  background-color: rgb(238, 230, 230); 
-  border-radius: 5px;
-  
-  
-}
-
-.guestInfo {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-
-
-}
-
-.guestInfoItem{
-display: flex;
-justify-content: space-around;
-border: 1px solid #d8d5d5;
-padding: 10px 20px;
-margin-bottom: 10px;
-border-radius: 5px;
-box-shadow: #6f6f6f;
-margin-top: 10px;
-  
-}
-
-.formLabelContainer{
-  margin-top: 10px;
-  /* border: 1px solid red; */
-  padding: 4% 2%;
-}
-.formLabel {
-  margin-right: 4%;
-
-}
-
-.guestInfoItem li{
-  /* text-decoration: none; */
-}
-
-.formContainer{
-  margin: 10% auto;
-  border: 1px solid #d8d5d5;
-  padding: 2% 4%;
-border-radius: 5px;
-box-shadow: #6f6f6f;
-
-}
-
-.dish {
-  text-transform: capitalize;
-}
-
-.btn:hover{
-  background-color: rgb(139, 119, 119); 
 }
 
 @media screen and (max-width: 600px) {
-  .GuestPageCointaner{
+  .GuestPageCointaner {
     width: 100%;
     margin: 0;
   }
-  }
+}

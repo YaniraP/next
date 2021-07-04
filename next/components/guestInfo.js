@@ -1,6 +1,5 @@
-import styles from '../styles/GuestPage.module.css';
+import styles from '../styles/GuestInfo.module.css';
 
-//TODO: UPDATE CSS FILE
 export default function GuestInfo({ guest, handelEdit }) {
   return (
     <div className={styles.infoContainer}>
@@ -10,29 +9,47 @@ export default function GuestInfo({ guest, handelEdit }) {
       </p>
 
       <div className={styles.guestInfo}>
-        <div className={styles.guestInfoItem}> 
-        <p>Name: {guest.name}</p></div>
         <div className={styles.guestInfoItem}>
-        <p> Plus one: {guest.plusOne ? 'Yes' : 'No'}</p>
+          <p>
+            <span className={styles.bolder}>Name: </span>
+            {guest.name}
+          </p>
         </div>
         <div className={styles.guestInfoItem}>
-        <p> RSVP:{' '}
-          {guest.rsvp === 'confirmed' ? guest.rsvp : 'pending confirmation'}</p>
+          <p>
+            {' '}
+            <span className={styles.bolder}>Plus one: </span>{' '}
+            {guest.plusOne ? 'Yes' : 'No'}
+          </p>
         </div>
         <div className={styles.guestInfoItem}>
-         <p>Menu selection:{' '}
-          {!guest.mealSelection[0].selected &&
-          !guest.mealSelection[1].selected &&
-          !guest.mealSelection[2].selected
-            ? 'No menu'
-            : guest.mealSelection.map(
+          <p>
+            <span className={styles.bolder}>RSVP: </span>
+            {guest.rsvp === 'confirmed' ? (
+              guest.rsvp
+            ) : (
+              <span className={styles.message}>confirmation pending</span>
+            )}
+          </p>
+        </div>
+        <div className={styles.guestInfoItem}>
+          <p>
+            <span className={styles.bolder}>Menu selection: </span>
+            {!guest.mealSelection[0].selected &&
+            !guest.mealSelection[1].selected &&
+            !guest.mealSelection[2].selected ? (
+              <p className={styles.message}>No menu selected</p>
+            ) : (
+              guest.mealSelection.map(
                 (dish, i) =>
                   dish.selected && (
                     <li key={i} className={styles.dish}>
-                      {'' + dish.dish + ' '}
+                      {dish.dish}
                     </li>
                   )
-              )}</p> 
+              )
+            )}
+          </p>
         </div>
       </div>
 

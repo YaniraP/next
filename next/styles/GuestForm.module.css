@@ -1,0 +1,31 @@
+.formLabelContainer {
+  margin-top: 10px;
+  padding: 4% 2%;
+}
+.formLabel {
+  margin-right: 4%;
+}
+
+.formContainer {
+  margin: 10% auto;
+  border: 1px solid #d8d5d5;
+  padding: 2% 4%;
+  border-radius: 5px;
+  box-shadow: #6f6f6f;
+}
+
+.guestName {
+  text-align: center;
+}
+
+.customSelect {
+  width: 60px;
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.checkboxText {
+  padding-left: 10%;
+  text-transform: capitalize;
+}

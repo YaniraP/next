@@ -1,0 +1,57 @@
+.infoContainer {
+  margin-top: 5%;
+  border: 1px solid #d8d5d5;
+  padding: 2% 4%;
+  border-radius: 5px;
+  box-shadow: #6f6f6f;
+}
+
+.title {
+  text-align: center;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.guestInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.guestInfoItem {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #d8d5d5;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: #6f6f6f;
+  margin-top: 10px;
+}
+
+.dish {
+  text-transform: capitalize;
+  list-style-type: circle;
+}
+
+.message {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .infoContainer {
+    width: 85%;
+    margin: 0;
+    overflow-y: hidden;
+    margin: 0% 7%;
+  }
+
+  .guestInfoItem {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: #6f6f6f;
+    margin-top: 8px;
+  }
+}
