@@ -6,8 +6,8 @@ import GuestList from '../components/guestList';
 export const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function HomePage() {
-  const { data, error } = useSWR('/api/guests', fetcher);
-
+  const { data, error } = useSWR(process.env.API, fetcher);
+  
   if (error) return 'An error has occurred: ' + error;
   if (!data) return 'Loading...';
 

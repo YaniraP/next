@@ -10,7 +10,7 @@ export default function GuestPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data, error } = useSWR(`/api/guests/${id}`, fetcher);
+const { data, error } = useSWR((process.env.API + id), fetcher);
 
   const [isEditing, setEditing] = useState(false);
 
