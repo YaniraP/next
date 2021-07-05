@@ -38,7 +38,7 @@ export default function GuestInfo({ guest, handelEdit }) {
             {!guest.mealSelection[0].selected &&
             !guest.mealSelection[1].selected &&
             !guest.mealSelection[2].selected ? (
-              <p className={styles.message}>No menu selected</p>
+              <span className={styles.message}>No menu selected</span>
             ) : (
               guest.mealSelection.map(
                 (dish, i) =>
